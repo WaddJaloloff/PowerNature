@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smooth Logo Slider</title>
+
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Slick JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+    .items-box{
+      background-color: inherit!important;
+
+    }
+    .mimgs-box {
+      width: 100%;
+      height: 100%;
+      margin: 50px auto;
+      overflow: hidden;
+    }
+
+    .items-box {
+      padding: 10px;
+    }
+
+    .companies {
+      background-color: #fff;
+      border-radius: 15px;
+      width: 100%;
+      object-fit: contain;
+      /* filter: grayscale(100%); */
+      transition: filter 0.3s ease;
+    }
+
+    .companies:hover {
+      filter: grayscale(0%);
+    }
+  </style>
+</head>
+<body>
+
+  
+
+
+
+
+
+
+
+    <div class="mimgs-box slider">
+    <div class="items-box"><img class="companies" src="{% static 'app/images/jinko.png' %}" alt=""></div>
+    <div class="items-box"><img class="companies" src="{% static 'app/images/longi.png' %}" alt=""></div>
+    <div class="items-box"><img class="companies" src="{% static 'app/images/ja-solar.png' %}" alt=""></div>
+    <div class="items-box"><img class="companies" src="{% static 'app/images/tw.png' %}" alt=""></div>
+    <div class="items-box"><img class="companies" src="{% static 'app/images/huawei.png' %}" alt=""></div>
+    <div class="items-box"><img class="companies" src="{% static 'app/images/sungrow.png' %}" alt=""></div>
+    <div class="items-box"><img class="companies" src="{% static 'app/images/solax.png' %}" alt=""></div>
+    <div class="items-box"><img class="companies" src="{% static 'app/images/suntree.png' %}" alt=""></div>
+    <div class="items-box"><img class="companies" src="{% static 'app/images/byd.png' %}" alt=""></div>
+    <div class="items-box"><img class="companies" src="{% static 'app/images/solis.png' %}" alt=""></div>
+    <div class="items-box"><img class="companies" src="{% static 'app/images/astron.png' %}" alt=""></div>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        speed: 5000,               // Sezilarli yumshoq o‘tish tezligi
+        autoplay: true,
+        autoplaySpeed: 10,          // 0 ms kutish - silliq oqimga o‘xshaydi
+        cssEase: 'linear',         // Linear harakat (eng silliq)
+        infinite: true,
+        arrows: false,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        pauseOnDotsHover: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+
+</body>
+</html>

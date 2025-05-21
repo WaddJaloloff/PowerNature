@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>5 Slaydli Avtomatik Slider</title>
+  <link rel="stylesheet" href="{% static 'app/css/our-work.css' %}">
+</head>
+<body>
+  <div class="our-work-slider">
+    {% for work in ourworks %}
+    <div class="slide" id="slide{{ forloop.counter }}" style="background-image: url('{{ work.image.url }}');">
+      <div class="slide-overlay">
+        <h1 class="slide-title">{{ work.name }}</h1>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const slides = document.querySelectorAll('.slide');
+      let currentIndex = 0;
+  
+      function updateSlides() {
+        slides.forEach((slide) => {
+          slide.classList.remove('back-left-2', 'back-left', 'front', 'back-right', 'back-right-2');
+        });
+  
+        const total = slides.length;
+  
+        let prev2 = (currentIndex - 2 + total) % total;
+        let prev = (currentIndex - 1 + total) % total;
+        let next = (currentIndex + 1) % total;
+        let next2 = (currentIndex + 2) % total;
+  
+        // Hozirgi slayd holatlari
+        slides[prev2].classList.add('back-left-2');
+        slides[prev].classList.add('back-left');
+        slides[currentIndex].classList.add('front');
+        slides[next].classList.add('back-right');
+        slides[next2].classList.add('back-right-2');
+      }
+  
+      function startSlider() {
+        setInterval(() => {
+          currentIndex = (currentIndex + 1) % slides.length;
+          updateSlides();
+        }, 3000);
+      }
+  
+      if (slides.length > 0) {
+        updateSlides();
+        startSlider();
+      }
+    });
+  </script>
+  
+  
+</body>
+</html>
