@@ -13,7 +13,7 @@ SECRET_KEY = "django-insecure-h%ux0u+k+r&!=!ze@k((1s3$7w+48_9oo#2du4nz+p_&)et!7v
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['powernature.uz', 'www.powernature.uz']
+ALLOWED_HOSTS = ['*']#['powernature.uz', 'www.powernature.uz']
 
 
 
@@ -118,7 +118,7 @@ STATICFILES_DIRS = [
 STATIC_ROOT = '/var/www/powernature/staticfiles'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'  # Bu joy to‘g‘ri
+MEDIA_ROOT = BASE_DIR / 'media'  
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

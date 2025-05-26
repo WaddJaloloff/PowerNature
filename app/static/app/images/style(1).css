@@ -40,7 +40,6 @@ html {
 
 }
 
-
 /*body{*/
 /*      overflow-x: hidden !important;*/
 /*}*/
@@ -319,7 +318,7 @@ button {
 }
 
 .color-primary {
-    color: green !important;
+    color: #EF8232 !important;
 }
 
 .color-secondary {
@@ -355,7 +354,7 @@ button {
 }
 
 .bg-primary {
-    background-color: green !important;
+    background-color: #EF8232 !important;
 }
 
 .bg-secondary {
@@ -388,7 +387,7 @@ hr {
 
 
 .hrlineone {
-    border-top: 3px solid green !important;
+    border-top: 3px solid #EF8232 !important;
     border: none;
     width: 100px;
     padding-bottom: 15px;
@@ -556,7 +555,7 @@ h6 {
 a {
     font-weight: 600;
     cursor: pointer;
-    color: green;
+    color: #EF8232;
     line-height: 32px;
     text-decoration: none;
     -webkit-transition: all 0.4s ease-in-out;
@@ -764,7 +763,7 @@ p {
     letter-spacing: 0.25px;
     font-weight: 500;
     color: #fff;
-    background-color: green;
+    background-color: #EF8232;
     transition: .3s all;
 
 }
@@ -789,7 +788,7 @@ p {
 }
 
 .btnthree a:hover {
-    background-color: green;
+    background-color: #EF8232;
 
 }
 
@@ -819,7 +818,7 @@ p {
     line-height: 32px;
     letter-spacing: 0.25px;
     font-weight: 400;
-    color: green;
+    color: #EF8232;
     transition: .3s all;
 
 
@@ -829,7 +828,7 @@ p {
     font-size: 16px;
     padding: 3px;
     border-radius: 50%;
-    border: 1px solid green;
+    border: 1px solid #EF8232;
     transition: .3s all;
 }
 
@@ -1107,7 +1106,7 @@ p {
 }
 
 .main-services-banner .breadcamb-box .breadcamb-item a:hover {
-    color: green;
+    color: #EF8232;
 }
 
 
@@ -1189,7 +1188,7 @@ p {
 }
 
 .main-services-banner {
-    margin-top: 120px !;
+    margin-top: 80px;
     overflow: hidden;
 
 }
@@ -1292,12 +1291,6 @@ p {
 
 }
 
-.container.belive {
-    margin: 0 !important;
-    padding: 50px;
-    min-width: 100%;
-}
-
 .navbar {
     display: flex;
     flex-wrap: nowrap;
@@ -1340,19 +1333,6 @@ p {
 
 /* Mobil qurilmalar uchun */
 @media (max-width: 768px) {
-    .container.belive {
-        margin: 0 !important;
-        padding: 0px!important;
-    }
-    .container.our-last-work{
-        margin: 0 !important;
-        padding: 0px!important;
-
-    }
-    .our-work-slider {
-        width: 90%;
-        height: 350px;
-    }
     .nav-items {
         display: none;
         flex-direction: column;
@@ -1407,24 +1387,22 @@ p {
 .fa-circle-info {
     color: #3cff00 !important;
     /* ko‘k rangli 'i' belgisi */
-    font-size: 1.6rem !important;
-}
-
-.accordion-button::before {
+    font-size: 1.6rem!important;
+}.accordion-button::before {
     display: none !important;
 }
 
 
 .main-img-details-box .mimgs-box .items-box p {
     padding: 10px 0 0px 0;
-    color: green;
+    color: #EF8232;
     font-size: 20px;
     font-weight: 600;
 
 }
 
 .main-img-details-box .mimgs-box .items-box h5 {
-    color: green;
+    color: #EF8232;
 }
 
 .main-img-details-box .image-box {
@@ -1443,7 +1421,7 @@ p {
     left: -22px;
     height: 340px;
     width: 30px;
-    background-color: green;
+    background-color: #EF8232;
 }
 
 .main-img-details-box .company-details-box .content-box {
@@ -1467,7 +1445,7 @@ p {
     left: -15px;
     height: 190px;
     width: 15px;
-    background-color: green;
+    background-color: #EF8232;
 }
 
 
@@ -1505,14 +1483,14 @@ p {
 
 .main-oship-box .mimgs-box .items-box p {
     padding: 10px 0 0px 0;
-    color: green;
+    color: #EF8232;
     font-size: 20px;
     font-weight: 600;
 
 }
 
 .main-oship-box .mimgs-box .items-box h5 {
-    color: green;
+    color: #EF8232;
 }
 
 .main-oship-box .image-box {
@@ -1531,7 +1509,7 @@ p {
     left: -22px;
     height: 340px;
     width: 30px;
-    background-color: green;
+    background-color: #EF8232;
 }
 
 .main-oship-box .company-details-box .content-box {
@@ -1555,7 +1533,7 @@ p {
     left: -15px;
     height: 190px;
     width: 15px;
-    background-color: green;
+    background-color: #EF8232;
 }
 
 
@@ -1750,7 +1728,7 @@ p {
 }
 
 .main-contact-box .contact-details .items-box .text-box a:hover {
-    color: green;
+    color: #EF8232;
 
 }
 
@@ -1872,7 +1850,7 @@ p {
 .blog-search-box form .form-group button {
     width: 30%;
     padding: 10px;
-    background-color: green;
+    background-color: #EF8232;
     color: #fff;
     font-size: 15px;
     font-weight: 400;
@@ -1905,7 +1883,7 @@ p {
 }
 
 .main-blogdetails-box .recent-post-box .items-box:hover a {
-    color: green;
+    color: #EF8232;
 
 }
 
@@ -1936,7 +1914,7 @@ p {
 }
 
 .main-blogdetails-box .archives-post-box .items-box:hover a {
-    color: green;
+    color: #EF8232;
 
 }
 
@@ -2059,7 +2037,7 @@ p {
 
 .faq.faq_2 button:hover {
     background-color: RGBA(239, 130, 50, 0.05) !important;
-    color: green !important;
+    color: #EF8232 !important;
 }
 
 .faq .accordion-item {
@@ -2098,7 +2076,7 @@ p {
 .faq.faq_2 button[aria-expanded=true] {
     background-color: RGBA(239, 130, 50, 0.05) !important;
     box-shadow: none;
-    color: green !important;
+    color: #EF8232 !important;
 }
 
 .faq .accordion-item .accordion-header button span {
@@ -2614,7 +2592,7 @@ header.header-1 .main-menu ul>li>ul li a {
 }
 
 header.header-1 .main-menu ul>li>ul li:hover {
-    color: green;
+    color: #EF8232;
     background-color: #fff;
 }
 
@@ -3154,7 +3132,7 @@ header.header-1 .top-header .header-right-socail .social-profile ul li a {
 header.header-1 .top-header .header-right-socail .social-profile ul li a:hover,
 header.header-1 .top-header .header-right-socail .social-profile ul li a:focus {
     /* background:  */
-    color: green;
+    color: #EF8232;
 }
 
 header.header-1 .top-header .header-cta ul {
@@ -3192,13 +3170,13 @@ header.header-1 .top-header .header-cta ul li a {
 
 header.header-1 .top-header .header-cta ul li a:hover:-moz-any-link,
 header.header-1 .top-header .header-cta ul li a:focus:-moz-any-link {
-    color: green;
+    color: #EF8232;
     cursor: pointer;
 }
 
 header.header-1 .top-header .header-cta ul li a:hover:any-link,
 header.header-1 .top-header .header-cta ul li a:focus:any-link {
-    color: green;
+    color: #EF8232;
     cursor: pointer;
 }
 
@@ -3228,7 +3206,7 @@ header.header-1 .header-menu {
 header.header-1 .header-menu ul>li:hover>a,
 header.header-1 .header-menu ul>li:focus>a,
 header.header-1 .header-menu ul>li.active>a {
-    color: green;
+    color: #EF8232;
 }
 
 
@@ -3308,7 +3286,7 @@ header.header-1 .main-header-wraper .header-btn:focus:after {
 }
 
 header.header-1 .main-header-wraper #hamburger {
-    color: green;
+    color: #EF8232;
 }
 
 .main-header-wraper {
@@ -3337,20 +3315,6 @@ header.header-1 .main-header-wraper #hamburger {
     right: 0px;
 }
 
-.bannerside-imgbox {
-    width: 100%;
-    height: 400px;
-    /* kerakli balandlik */
-    background-image: url('/static/app/images/photo_2025-05-22_18-23-43.jpg');
-    background-position: top;
-    /* rasmning yuqorisidan boshlanadi */
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* agar to‘liq maydonga sig‘dirish kerak bo‘lsa */
-    /* kerak bo‘lsa: background-size: contain; */
-    overflow: hidden;
-}
-
 .mobile-nav-yellow {
     background-color: #FF9C00;
 }
@@ -3360,11 +3324,11 @@ header.header-1 .main-header-wraper #hamburger {
 }
 
 .mobile-nav-red {
-    background-color: green;
+    background-color: #EF8232;
 }
 
 .mobile-nav-red .navigation ul:not(.dropdown-menu)>li.dropdown .dropdown-menu {
-    background-color: green !important;
+    background-color: #EF8232 !important;
 }
 
 .mobile-nav .close-nav {
@@ -3631,12 +3595,12 @@ header.header-1 .main-header-wraper #hamburger {
     color: #fff;
     font-size: 20px;
     background-color: rgba(255, 255, 255, 0.21);
-    border: 1px solid green;
+    border: 1px solid #EF8232;
     ;
 }
 
 .footer-social-box a:hover {
-    color: green;
+    color: #EF8232;
 }
 
 
@@ -3649,7 +3613,7 @@ header.header-1 .main-header-wraper #hamburger {
 
 .single-footer-wid .wid-title {
     padding-bottom: 26px;
-    color: green;
+    color: #EF8232;
     font-size: 20px;
 }
 
@@ -3665,7 +3629,7 @@ footer .fcd-box a {
 }
 
 footer .fcd-box a:hover {
-    color: green;
+    color: #EF8232;
 }
 
 footer .fcd-box a i {

@@ -481,26 +481,6 @@
 
 
 
-        .whatsapp-fix {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 40px;
-            left: 10px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 3px #999;
-            z-index: 100;
-        }
-
-        .whatsapp-fix .my-float {
-            margin-top: 16px;
-        }
-
-
         .main-gallery-box {
             margin-top: 156px;
             padding: 70px 0 70px 0;
@@ -563,9 +543,9 @@
         }
 
         .custompg .current {
-            background-color: #EF8232;
+            background-color: green;
             color: white;
-            border-color: #EF8232;
+            border-color: green;
         }
 
         .para-box ul li {
@@ -616,9 +596,11 @@
     <!-- End Google Tag Manager (noscript) -->
     <!-- header end -->
     <header class="header header-1 stop">
-        <div class="navbar">
+        <div class="navbar" id="navbar">
             <div class="name-company">
-                <h2 style="font-weight: 600;">PowerNature</h2>
+                <a href="#">
+                    <h2 style="font-weight: 600;">PowerNature</h2>
+                </a>
             </div>
             <button class="menu-toggle" aria-label="Toggle navigation">
                 <span class="bar"></span>
@@ -626,9 +608,9 @@
                 <span class="bar"></span>
             </button>
             <ul class="nav-items">
-                <li>Главная</li>
-                <li>О нас</li>
-                <li>Услуги</li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#about-us">О нас</a></li>
+                <li><a href="#FAQs">Вопросы</a></li>
                 <div class="contact">Связаться с нами</div>
             </ul>
         </div>
@@ -640,7 +622,7 @@
     <!-- header end -->
 
     <div class="header-gutter home"></div><!-- header end --><!-- main banner section -->
-    <section class="main-services-banner coverbg bannerpd">
+    <section class="main-services-banner coverbg bannerpd" id="banner">
         <div class="row">
             <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 col-xs-12 p-0 m-0">
                 <div class="banner-heading-box">
@@ -660,10 +642,11 @@
                 </div>
             </div>
             <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12 col-xs-12 p-0 m-0">
-                <div class="bannerside-imgbox"
-                    style="background-image:url(https://www.solar-sky.com/wp-content/uploads/2023/10/side-img.webp)">
-
+                <div class="bannerside-imgbox" id="banner-box"
+                    data-bg="{% static 'app/images/photo_2025-05-22_18-23-43.jpg' %}">
                 </div>
+
+
             </div>
         </div>
     </section>
@@ -683,7 +666,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 pb-4">
                     <div class="items-box aos-init aos-animate" data-aos="fade-up">
                         <div class="contentbox">
-                            <h5 class="color-highlight">{{ post.title|capfirst }}</h5>
+                            <h5 class="color-highlight" style="color: green!important;">{{ post.title|capfirst }}</h5>
 
                             <p>
                                 <span class="short-text">
@@ -714,7 +697,7 @@
     </section>
 
     <!-- partners image section code start -->
-    <div class="habout-section" style="text-align: center; background-color: #28ef480d!important;">
+    <div id="about-us" class="habout-section" style="text-align: center; background-color: #28ef480d!important;">
         <div class="container">
             <h2 style="color: green;">О нас</h2>
             &nbsp;
@@ -749,7 +732,7 @@
 
     <section class="main-img-details-box bg-white color-grey"
         style="text-align: center;align-items: center;min-width: 100%!important;justify-content: center;">
-        <div class="container" style="margin: 0 !important; padding: 50px; min-width: 100%;">
+        <div class="container belive">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="details-box  text-center">
@@ -854,7 +837,7 @@
                         data-aos="fade-up">
                         <div class="contentbox">
                             <img class="img-fluid"
-                                src="https://www.solar-sky.com/wp-content/uploads/2023/10/plant1.webp" alt="">
+                                src="{% static 'app/images/output-onlinepngtools.png' %}" alt="">
                             <h5 class="color-black fpw">
                                 Солнечная энергия Электрическая </h5>
                             <p> Солнечная энергия Электрическая
@@ -1013,8 +996,8 @@
 
     <!--Recent Word Slider start -->
 
-    <div class="main-recent-work bg-tesimonial color-black">
-        <div class="container">
+    <div id="our-last-work" class="main-recent-work bg-tesimonial color-black">
+        <div class="container our-last-work">
             <div class="row">
                 <div class="col-12">
                     <div class="heading-box text-center">
@@ -1034,7 +1017,7 @@
 
 
 
-    <section class="main-faq-section bg-cream">
+    <section id="FAQs" class="main-faq-section bg-cream">
         <div class="container">
             <!-- Recent Word Slider end -->
             <div class="faq faq_2">
@@ -1091,7 +1074,7 @@
     <!-- Clean energy is for everyone section code end -->
 
     <!-- Blog view section code start -->
-<!-- 
+    <!-- 
     <section class="blog-view-box bg-cream">
         <div class="container">
             <h2 class="text-center pb-4 color-black">Наши <span class="color-secondary">предложения</span></h2>
@@ -1177,7 +1160,7 @@
 
     <section class="main-img-details-box bg-white color-grey"
         style="text-align: center;align-items: center;min-width: 100%!important;justify-content: center;">
-        <div class="container" style="margin: 0 !important; padding: 50px; min-width: 100%;">
+        <div class="container belive">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="details-box  text-center">
@@ -1212,10 +1195,10 @@
             <footer class="py-3 my-4" style="margin: 0!important;">
                 <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Главная</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Предложение</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Работы</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQ</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">О нас</a></li>
+                    <li class="nav-item"><a href="#about-us" class="nav-link px-2 text-muted">О нас</a></li>
+                    <li class="nav-item"><a href="#our-last-work" class="nav-link px-2 text-muted">Работы</a></li>
+                    <li class="nav-item"><a href="#FAQs" class="nav-link px-2 text-muted">Вопросы</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Вызов</a></li>
                 </ul>
                 <p class="text-center text-muted">&copy; Авторское право 2021 все права защищены </p>
             </footer>
@@ -1407,6 +1390,28 @@
             });
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const bannerBox = document.getElementById("banner-box");
+            const bgUrl = bannerBox.getAttribute("data-bg");
+
+            if (bgUrl) {
+                bannerBox.style.backgroundImage = `url('${bgUrl}')`;
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbar = document.getElementById("navbar");
+            const banner = document.getElementById("banner");
+
+            if (navbar && banner) {
+                const navbarHeight = navbar.offsetHeight;
+                banner.style.marginTop = navbarHeight + "px";
+            }
+        });
+    </script>
+
 
 </body>
 
