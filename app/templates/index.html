@@ -410,20 +410,11 @@
     <link rel="stylesheet" id="wpcf7-redirect-script-frontend-css"
         href="{% static 'app/wpcf7-redirect-frontend.min.css' %}" type="text/css" media="all">
     <link rel="stylesheet" id="style-css" href="{% static 'app/style(1).css' %}" type="text/css" media="all">
-    <script type="text/javascript" async="" src="{% static 'app/js' %}"></script>
 
-    <script async="" src="{% static 'app/gtm.js.download' %}"></script>
-    <script type="text/javascript" src="{% static 'app/jquery.min.js.download' %}" id="jquery-core-js"></script>
-    <script type="text/javascript" src="{% static 'app/jquery-migrate.min.js.download' %}"
+    <script async="" src="{% static 'app/js/gtm.js.download' %}"></script>
+    <script type="text/javascript" src="{% static 'app/js/jquery.min.js.download' %}" id="jquery-core-js"></script>
+    <script type="text/javascript" src="{% static 'app/js/jquery-migrate.min.js.download' %}"
         id="jquery-migrate-js"></script>
-    <script type="text/javascript" src="{% static 'app/powernature' %}" id="powernature-iconscss-js"></script>
-    <script type="text/javascript" src="{% static 'app/powernature' %}" id="powernature-slickcss-js"></script>
-    <script type="text/javascript" src="{% static 'app/powernature' %}" id="powernature-bootcss-js"></script>
-    <script type="text/javascript" src="{% static 'app/powernature' %}" id="powernature-bootstrap-js"></script>
-    <script type="text/javascript" src="{% static 'app/powernature' %}" id="powernature-jquery-js"></script>
-    <script type="text/javascript" src="{% static 'app/powernature' %}" id="powernature-popper-js"></script>
-    <script type="text/javascript" src="{% static 'app/powernature' %}" id="powernature-slick-js"></script>
-    <script type="text/javascript" src="{% static 'app/powernature' %}" id="powernature-active-js"></script>
     <link rel="https://api.w.org/" href="/wp-json/">
     <link rel="alternate" type="application/json" href="/wp-json/wp/v2/pages/6">
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
@@ -431,8 +422,6 @@
         href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.solar-sky.com%2F">
     <link rel="alternate" type="text/xml+oembed"
         href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.solar-sky.com%2F&amp;format=xml">
-    <link rel="icon" href="/wp-content/uploads/2023/10/cropped-favicon-32x32.webp" sizes="32x32">
-    <link rel="icon" href="/wp-content/uploads/2023/10/cropped-favicon-192x192.webp" sizes="192x192">
     <link rel="apple-touch-icon" href="/wp-content/uploads/2023/10/cropped-favicon-180x180.webp">
     <meta name="msapplication-TileImage"
         content="https://www.solar-sky.com/wp-content/uploads/2023/10/cropped-favicon-270x270.webp">
@@ -610,8 +599,10 @@
             <ul class="nav-items">
                 <li><a href="#">Главная</a></li>
                 <li><a href="#about-us">О нас</a></li>
-                <li><a href="#FAQs">Вопросы</a></li>
-                <div class="contact">Связаться с нами</div>
+                <li><a href="#FAQs">Вопросы</a></li><a href="tel:+998934264717">
+                    <div class="contact">Связаться с нами</div>
+                </a>
+
             </ul>
         </div>
     </header>
@@ -629,12 +620,13 @@
                     <div data-aos="zoom-in-up" class="aos-init aos-animate">
                         <p class="banner-para">
                             4 года непрерывного упорного труда </p>
-                        <h2 class="color-white text-capitalize py-3">
+                        <h2 style="margin-bottom: 0!important;" class="color-white text-capitalize py-3">
                             Эксперты по установке солнечных панелей
                         </h2>
+                        <a style="color: #fff;" href="tel:+998934264717">+998934264717</a>
                         <div class="banner-button-box">
                             <div class="btnbanner">
-                                <a href="/contact">Начните сегодня</a>
+                                <a href="tel:+998934264717">Начните сегодня</a>
                             </div>
                         </div>
                     </div>
@@ -836,8 +828,7 @@
                     <div class="items-box aos-init aos-animate" style="min-height: 540px !important;"
                         data-aos="fade-up">
                         <div class="contentbox">
-                            <img class="img-fluid"
-                                src="{% static 'app/images/output-onlinepngtools.png' %}" alt="">
+                            <img class="img-fluid" src="{% static 'app/images/output-onlinepngtools.png' %}" alt="">
                             <h5 class="color-black fpw">
                                 Солнечная энергия Электрическая </h5>
                             <p> Солнечная энергия Электрическая
@@ -847,7 +838,7 @@
                                 нашей сетью сертифицированных специалистов по установке.</p>
                         </div>
                         <div class="btntwo pt-4">
-                            <a class="m-auto" href="/solar-power-electric/">Посмотреть больше</a>
+                            <a class="m-auto" href="#FAQs">По другим вопросам</a>
                         </div>
 
                     </div>
@@ -856,8 +847,7 @@
                     <div class="items-box aos-init aos-animate" style="min-height: 540px !important;"
                         data-aos="fade-up">
                         <div class="contentbox">
-                            <img class="img-fluid"
-                                src="{% static 'app/images/output-onlinepngtools (1).png' %}" alt="">
+                            <img class="img-fluid" src="{% static 'app/images/output-onlinepngtools (1).png' %}" alt="">
                             <h5 class="color-black fpw">
                                 Solar Venti Теплое воздушное отопление </h5>
                             <p>Прошли времена естественной вентиляции через многочисленные небольшие утечки в наших
@@ -867,7 +857,7 @@
                         </div>
 
                         <div class="btntwo pt-4">
-                            <a class="m-auto" href="/solar-venti-warm-air-heating/">Посмотреть больше</a>
+                            <a class="m-auto" href="#FAQs">По другим вопросам</a>
                         </div>
 
                     </div>
@@ -877,8 +867,7 @@
                     <div class="items-box aos-init aos-animate" style="min-height: 540px !important;"
                         data-aos="fade-up">
                         <div class="contentbox">
-                            <img class="img-fluid"
-                                src="{% static 'app/images/output-onlinepngtools (2).png' %}" alt="">
+                            <img class="img-fluid" src="{% static 'app/images/output-onlinepngtools (2).png' %}" alt="">
                             <h5 class="color-black fpw">
                                 Генераторы </h5>
                             <p>Электрический генератор представляет собой комбинацию двигателя с электрическим
@@ -888,7 +877,7 @@
                                 мест без подключения к электросети</p>
                         </div>
                         <div class="btntwo pt-4">
-                            <a class="m-auto" href="/generators-spain/">Посмотреть больше</a>
+                            <a class="m-auto" href="#FAQs">По другим вопросам</a>
                         </div>
 
                     </div>
@@ -1065,7 +1054,7 @@
                 <p class="color-lightgrey">
                     Инвестируйте в что-то лучшее вместе с PowerNature </p>
                 <div class="btnfour pt-4">
-                    <a class="m-auto" href="/contact/"> Давайте подключимся</a>
+                    <a style="color: green;" class="m-auto" href="tel:+998934264717"> Давайте подключимся</a>
                 </div>
             </div>
         </div>
@@ -1198,7 +1187,7 @@
                     <li class="nav-item"><a href="#about-us" class="nav-link px-2 text-muted">О нас</a></li>
                     <li class="nav-item"><a href="#our-last-work" class="nav-link px-2 text-muted">Работы</a></li>
                     <li class="nav-item"><a href="#FAQs" class="nav-link px-2 text-muted">Вопросы</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Вызов</a></li>
+                    <li class="nav-item"><a href="tel:+998934264717" class="nav-link px-2 text-muted">Вызов</a></li>
                 </ul>
                 <p class="text-center text-muted">&copy; Авторское право 2021 все права защищены </p>
             </footer>
@@ -1221,7 +1210,6 @@
         }
 
         // Desktop uchun
-        carousel.addEventListener('mousedown', pauseAnimation);
         document.addEventListener('mouseup', resumeAnimation);
 
         // Mobil qurilmalar uchun
@@ -1231,38 +1219,30 @@
 
 
 
-    <script src="{% static 'app/jquery.min(1).js.download' %}"></script>
-    <script src="{% static 'app/popper.min.js.download' %}"></script>
-    <script src="{% static 'app/bootstrap.min.js.download' %}"></script>
-    <script src="{% static 'app/slick.min.js.download' %}"></script>
-    <script src="{% static 'app/aos.js.download' %}"></script>
-    <script src="{% static 'app/active.js.download' %}"></script>
-    <script type="text/javascript" src="{% static 'app/index.js.download' %}" id="swv-js"></script>
+    <script src="{% static 'app/js/jquery.min(1).js.download' %}"></script>
+    <script src="{% static 'app/js/bootstrap.min.js.download' %}"></script>
+    <script src="{% static 'app/js/slick.min.js.download' %}"></script>
+    <script src="{% static 'app/js/aos.js.download' %}"></script>
+    <script src="{% static 'app/js/active.js.download' %}"></script>
+    <script type="text/javascript" src="{% static 'app/js/index.js.download' %}" id="swv-js"></script>
     <script type="text/javascript" id="contact-form-7-js-extra">
         /* <![CDATA[ */
         var wpcf7 = { "api": { "root": "https:\/\/www.solar-sky.com\/wp-json\/", "namespace": "contact-form-7\/v1" } };
         /* ]]> */
     </script>
-    <script type="text/javascript" src="{% static 'app/index(1).js.download' %}" id="contact-form-7-js"></script>
+    <script type="text/javascript" src="{% static 'app/js/index(1).js.download' %}" id="contact-form-7-js"></script>
     <script type="text/javascript" id="dscf7_refresh_script-js-extra">
         /* <![CDATA[ */
         var ajax_object = { "ajax_url": "https:\/\/www.solar-sky.com\/wp-admin\/admin-ajax.php" };
         /* ]]> */
     </script>
-    <script type="text/javascript" src="{% static 'app/script-min.js' %}.download"
+    <script type="text/javascript" src="{% static 'app/js/script-min.js' %}.download"
         id="dscf7_refresh_script-js"></script>
-    <script type="text/javascript" id="wpcf7-redirect-script-js-extra">
-        /* <![CDATA[ */
-        var wpcf7r = { "ajax_url": "https:\/\/www.solar-sky.com\/wp-admin\/admin-ajax.php" };
-        /* ]]> */
-    </script>
-    <script type="text/javascript" src="{% static 'app/wpcf7r-fe.js' %}.download"
-        id="wpcf7-redirect-script-js"></script>
-    <script type="text/javascript" src="{% static 'app/wp-polyfill-inert.min.js.download' %}"
+    <script type="text/javascript" src="{% static 'app/js/wp-polyfill-inert.min.js.download' %}"
         id="wp-polyfill-inert-js"></script>
-    <script type="text/javascript" src="{% static 'app/regenerator-runtime.min.js.download' %}"
+    <script type="text/javascript" src="{% static 'app/js/regenerator-runtime.min.js.download' %}"
         id="regenerator-runtime-js"></script>
-    <script type="text/javascript" src="{% static 'app/wp-polyfill.min.js.download' %}" id="wp-polyfill-js"></script>
+    <script type="text/javascript" src="{% static 'app/js/wp-polyfill.min.js.download' %}" id="wp-polyfill-js"></script>
 
     <script>
         // Adding active class to the clicked nav link
