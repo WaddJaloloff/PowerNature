@@ -770,7 +770,7 @@ p {
 }
 
 .btntwo a:hover {
-    background-color: #0052B4;
+    background-color:  rgb(2, 177, 2);
 
 }
 
@@ -782,7 +782,7 @@ p {
     line-height: 20px;
     letter-spacing: 0.25px;
     font-weight: 500;
-    background-color: #0052B4;
+    background-color: rgb(2, 177, 2);
     color: #fff;
     transition: .3s all;
 
@@ -802,14 +802,14 @@ p {
     line-height: 20px;
     letter-spacing: 0.25px;
     font-weight: 500;
-    color: #0052B4;
+    color: rgb(2, 177, 2);
     background-color: #fff;
     transition: .3s all;
 
 }
 
 .btnfour a:hover {
-    background-color: #0052B4;
+    background-color: rgb(2, 177, 2);
     color: #fff;
 
 }
@@ -834,13 +834,13 @@ p {
 }
 
 .btnlink:hover a {
-    color: #0052B4;
+    color: rgb(2, 177, 2);
 
 
 }
 
 .btnlink:hover i {
-    border: 1px solid #0052B4;
+    border: 1px solid rgb(2, 177, 2);
 
 }
 
@@ -1087,7 +1087,7 @@ p {
     padding: 30px 50px;
     border-radius: 2px;
     opacity: 0.95;
-    background: #0052B4;
+    background: rgb(2, 177, 2);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1299,18 +1299,33 @@ p {
 }
 
 .navbar {
+    width: 100vw; /* bu 100% emas, balki to‘liq ekran kengligi */
+    max-width: 100vw;
+    min-width: 100vw;
+    overflow-x: hidden; /* x o‘qidagi overflowni cheklaydi */
+    background-color: #fff;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    width: 100%;
     padding: 20px 40px;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* boshqa elementlardan yuqorida ko‘rinadi */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* pastida soyani qo‘shsa chiroyli ko‘rinadi */
     /* kerakli qo‘shimcha */
 }
 
 .navbar * {
     color: green;
+}
+
+.navbar-walper{
+    background-color: #fff;
+    width: 100%;
 }
 
 .nav-items {
@@ -1342,17 +1357,20 @@ p {
 @media (max-width: 768px) {
     .container.belive {
         margin: 0 !important;
-        padding: 0px!important;
+        padding: 0px !important;
     }
-    .container.our-last-work{
+
+    .container.our-last-work {
         margin: 0 !important;
-        padding: 0px!important;
+        padding: 0px !important;
 
     }
+
     .our-work-slider {
         width: 90%;
         height: 350px;
     }
+
     .nav-items {
         display: none;
         flex-direction: column;
@@ -1379,7 +1397,13 @@ p {
         background: none;
         border: none;
         cursor: pointer;
+
+        position: relative;
+        /* kerak bo‘lsa */
+        z-index: 1010;
+        /* navbardan ham yuqorida */
     }
+
 
     .menu-toggle .bar {
         height: 3px;
@@ -2388,12 +2412,12 @@ p {
 }
 
 .color-blue {
-    color: #0052B4;
+    color: rgb(2, 177, 2);
 }
 
 .numbering {
     border-radius: 49px;
-    background: #0052B4;
+    background: rgb(2, 177, 2);
     padding: 2px 16px;
     color: #fff;
     height: 38px;
