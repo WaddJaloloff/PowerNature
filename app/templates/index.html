@@ -586,27 +586,27 @@
     <!-- header end -->
     <header class="header header-1 stop">
         <div class="navbar-walper">
-            
-        <div class="navbar" id="navbar">
-            <div class="name-company">
-                <a href="#">
-                    <h2 style="font-weight: 600;">PowerNature</h2>
-                </a>
-            </div>
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <ul class="nav-items">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#about-us">О нас</a></li>
-                <li><a href="#FAQs">Вопросы</a></li><a href="tel:+998934264717">
-                    <div class="contact">Связаться с нами</div>
-                </a>
 
-            </ul>
-        </div>
+            <div class="navbar" id="navbar">
+                <div class="name-company">
+                    <a href="#">
+                        <h2 style="font-weight: 600;">PowerNature</h2>
+                    </a>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-items">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#about-us">О нас</a></li>
+                    <li><a href="#FAQs">Вопросы</a></li><a href="tel:+998934264717">
+                        <div class="contact">Связаться с нами</div>
+                    </a>
+
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -1215,9 +1215,12 @@
         // Desktop uchun
         document.addEventListener('mouseup', resumeAnimation);
 
-        // Mobil qurilmalar uchun
-        carousel.addEventListener('touchstart', pauseAnimation);
-        document.addEventListener('touchend', resumeAnimation);
+        // Mobil qurilmalar uchunconst el = document.getElementById('your-element-id');
+        if (carousel) {
+            carousel.addEventListener('touchstart', pauseAnimation);
+            document.addEventListener('touchend', resumeAnimation);
+        }
+
     </script>
 
 
