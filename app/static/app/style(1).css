@@ -775,6 +775,9 @@ p {
 }
 
 
+
+
+
 .btnthree a {
     padding: 15px 25px;
     border-radius: 55px;
@@ -1218,6 +1221,7 @@ p {
     color: #FFF;
     font-family: DM Sans;
     font-size: 20px;
+    
     font-weight: 500;
     line-height: 40px;
     letter-spacing: 0.25px;
@@ -1359,7 +1363,12 @@ p {
         margin: 0 !important;
         padding: 0px !important;
     }
-
+    .main-services-banner.coverbg.bannerpd{
+        margin-top: 80px;
+    }
+    .banner-heading-box{
+        padding-right: 40px;
+    }
     .container.our-last-work {
         margin: 0 !important;
         padding: 0px !important;
